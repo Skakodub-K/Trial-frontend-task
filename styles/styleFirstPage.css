@@ -1,0 +1,142 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-image: url(../image/fon1440.png);
+    background-color: black;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 102px;
+}
+body::before {
+    content: '';
+    position: absolute;
+    top: 0%;
+    width: 100vw;
+    height: 100vh;
+    background-image: linear-gradient(to bottom, rgba(24, 26, 27, 0.2) 800px, rgba(0, 0, 0, 1) 950px);
+}
+#container{
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+}
+.Logo{
+    display: flex;
+    justify-content: center;
+}
+.LogoMain{
+    width: 380px;
+    height: 345px;
+}
+.imageCountry{
+    width: 188px;
+    height: 188px;
+    border-radius: 50%;
+    padding: 2px;
+    background: linear-gradient(180deg, #FFD28D 50%, #352000 95%);
+}
+.CardsCountrys{
+    margin-bottom: 113px;
+    margin-top: 98px; 
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 7.71vw;
+}
+p{
+    font-family: 'Crimson Text';
+    font-style: normal;
+    text-align: center;
+    font-size: 32px;
+    background: linear-gradient(180deg, #FFD28D 50%, #352000 95%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-top: 29px;
+}
+@media(max-width:1024px){
+    body{
+        background: no-repeat;
+        background-color: black;
+        background-image: url(../image/fon1024.png);
+        padding-top: 85px;
+    }
+    body::before {
+        content: '';
+        position: absolute;
+        top: 0%;
+        height: 100vh;
+        background-image: linear-gradient(to bottom, rgba(24, 26, 27, 0.2) 600px, rgba(0, 0, 0, 1) 790px);
+    }
+    .LogoMain{
+        width: 284px;
+        height: 257px;
+    }
+    .CardsCountrys{
+        margin-bottom: 101px;
+        margin-top: 73px;
+        gap: 4.3vw;
+    }
+}
+@media(max-width:768px){
+    body{
+        background: no-repeat;
+        background-color: black;
+        background-image: url(../image/fon768.png);
+        padding-top: 123px;
+    }
+    body::before {
+        content: '';
+        position: absolute;
+        top: 0%;
+        height: 100vh;
+        background-image: linear-gradient(to bottom, rgba(24, 26, 27, 0.45) 824px, rgba(0, 0, 0, 1) 1024px);
+    }
+    .LogoMain{
+        width: 57.81vw;
+        height: 52.21vw;
+    }
+    .imageCountry{
+        width: 24.48vw;
+        height: 24.48vw;
+    }
+    .CardsCountrys{
+        margin-bottom: 127px;
+        margin-top: 121px;
+        margin-left: 4vw;
+        gap: 4vw;
+    }
+}
+@media(max-width:320px){
+    body{
+        background-image: url(../image/fon320.png);
+        background-color: black;
+        padding-top: 60px;
+    }
+    body::before {
+        content: '';
+        position: absolute;
+        top: 0%;
+        height: 100vh;
+        background-image: linear-gradient(to bottom, rgba(24, 26, 27, 0.4) 370px, rgba(0, 0, 0, 1) 500px);
+    }
+    .LogoMain{
+        width: 63.125vw;
+        height: 56.56vw;
+    }
+    .imageCountry{
+        width: 37.5vw;
+        height: 37.5vw;
+    }
+    .CardsCountrys{
+        flex-wrap: wrap;
+        margin-bottom: 70px;
+        margin-top: 59px;
+        gap: 6.875vw;
+    }
+    p{
+        font-size: 19px;
+    }
+}
